@@ -1,6 +1,6 @@
 import random
 no_of_can=int(input("Enter Number of candidates : "))
-candidate=input(f'Enter {no_of_can} candidates Name : \n').split()
+candidate=input(f'Enter {no_of_can} candidates Name With Space : \n').split()
 print("Candidates are :-> ",candidate)
 print("Voting is Going On ...... Please wait for the Results...")
 print("Voting is Finishid.. And wait is Over")
@@ -13,7 +13,7 @@ for k in range(0,no_of_can):
     vots.append(c)
 
 for n in range(no_of_can):
-    print(candidate[n], ":",vots[n])
+    print(candidate[n]," Total Votes", ":",vots[n])
 
 print("Hence The Winner is ....")
 maximum=max(vots)
@@ -21,4 +21,4 @@ count=0
 for r in range(no_of_can):
     if vots[r]==maximum:
         count =r
-print(candidate[count],":",maximum)
+print(candidate[count],"Who Got Total ",":",maximum,"Votes")
